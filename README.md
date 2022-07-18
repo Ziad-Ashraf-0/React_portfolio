@@ -3,13 +3,13 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/Ziad-Ashraf-0/MyReads_Udacity.git
+  git clone https://github.com/Ziad-Ashraf-0/React_portfolio.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd MyReads_Udacity
+  cd React_portfolio
 ```
 
 Install dependencies
