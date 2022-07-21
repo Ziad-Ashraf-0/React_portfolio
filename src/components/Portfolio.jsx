@@ -2,7 +2,7 @@ import React from "react";
 import clock from "../assets/portfolio/clock.jpg";
 import installNode from "../assets/portfolio/installNode.jpg";
 import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import weather from "../assets/portfolio/weather.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
@@ -16,9 +16,9 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: reactParallax,
-      demo: "",
-      code: "",
+      src: weather,
+      demo: "http://ziadashraf.me/weather-app/",
+      code: "https://github.com/Ziad-Ashraf-0/weather-app",
     },
     {
       id: 3,
