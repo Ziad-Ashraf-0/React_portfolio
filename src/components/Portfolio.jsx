@@ -1,7 +1,7 @@
 import React from "react";
 import clock from "../assets/portfolio/clock.jpg";
 import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
+import space from "../assets/portfolio/space.jpg";
 import weather from "../assets/portfolio/weather.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
@@ -22,9 +22,9 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: navbar,
-      demo: "",
-      code: "",
+      src: space,
+      demo: "https://splendorous-florentine-46dec3.netlify.app/",
+      code: "https://github.com/Ziad-Ashraf-0/Space-Trvl-project",
     },
     {
       id: 4,
