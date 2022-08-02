@@ -3,8 +3,9 @@ import clock from "../assets/portfolio/clock.jpg";
 import installNode from "../assets/portfolio/installNode.jpg";
 import space from "../assets/portfolio/space.jpg";
 import weather from "../assets/portfolio/weather.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import drive from "../assets/portfolio/drive.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -28,9 +29,9 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      src: reactSmooth,
-      demo: "",
-      code: "",
+      src: drive,
+      demo: "https://cheery-concha-6c1784.netlify.app/",
+      code: "https://github.com/Ziad-Ashraf-0/drive-react",
     },
     {
       id: 5,
