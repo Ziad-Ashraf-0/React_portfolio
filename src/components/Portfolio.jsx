@@ -1,9 +1,9 @@
 import React from "react";
 import clock from "../assets/portfolio/clock.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
+
 import space from "../assets/portfolio/space.jpg";
 import weather from "../assets/portfolio/weather.jpg";
-
+import photo from "../assets/portfolio/photo.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import drive from "../assets/portfolio/drive.jpg";
 
@@ -35,9 +35,9 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      src: installNode,
-      demo: "",
-      code: "",
+      src: photo,
+      demo: "https://next-photo-app-weld.vercel.app/",
+      code: "https://github.com/Ziad-Ashraf-0/next-photo-app",
     },
     {
       id: 6,
