@@ -4,8 +4,8 @@ import clock from "../assets/portfolio/clock.jpg";
 import space from "../assets/portfolio/space.jpg";
 import weather from "../assets/portfolio/weather.jpg";
 import photo from "../assets/portfolio/photo.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import drive from "../assets/portfolio/drive.jpg";
+import rosa from "../assets/portfolio/the-rosa.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -41,7 +41,9 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      src: reactWeather,
+      src: rosa,
+      demo: "https://ziadashraf.me/the-rosa/",
+      code: "https://github.com/Ziad-Ashraf-0/the-rosa",
     },
   ];
 
