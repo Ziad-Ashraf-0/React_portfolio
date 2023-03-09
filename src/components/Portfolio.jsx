@@ -42,7 +42,7 @@ const Portfolio = () => {
     {
       id: 6,
       src: rosa,
-      demo: "https://ziadashraf.me/the-rosa/",
+      demo: "https://the-rosa-psi.vercel.app/",
       code: "https://github.com/Ziad-Ashraf-0/the-rosa",
     },
   ];
