@@ -13,21 +13,16 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fugiat
-          modi, autem obcaecati quisquam distinctio, aliquam impedit blanditiis
-          eveniet debitis quae dolores officiis vitae quasi suscipit nulla in
-          reiciendis quaerat praesentium. Alias repellendus facere voluptatem
-          aspernatur sunt. Non quisquam laboriosam recusandae eum, suscipit
-          culpa exercitationem minima? Et quaerat repudiandae odio.
+          Expirenced software engineer with a passion for developing innovative
+          applications that expedite the efficiency and effectiveness of
+          organizational success.Well-versed in technology and writting code to
+          create applications that are reliable and user-friendly.
         </p>
         <br />
         <p className="text-xl ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fugiat
-          modi, autem obcaecati quisquam distinctio, aliquam impedit blanditiis
-          eveniet debitis quae dolores officiis vitae quasi suscipit nulla in
-          reiciendis quaerat praesentium. Alias repellendus facere voluptatem
-          aspernatur sunt. Non quisquam laboriosam recusandae eum, suscipit
-          culpa exercitationem minima? Et quaerat repudiandae odio.
+          Confidenet communicator, strategic thinker, and innovative creator to
+          develop software that is customized to meet a company's organizational
+          needs, highlight its core competencies, and further its success.
         </p>
       </div>
     </div>
