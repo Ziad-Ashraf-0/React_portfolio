@@ -1,9 +1,9 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import clock from "../assets/portfolio/clock.jpg";
+// import clock from "../assets/portfolio/clock.jpg";
 
-import space from "../assets/portfolio/space.jpg";
-import weather from "../assets/portfolio/weather.jpg";
+// import space from "../assets/portfolio/space.jpg";
+// import weather from "../assets/portfolio/weather.jpg";
 import photo from "../assets/portfolio/photo.jpg";
 import drive from "../assets/portfolio/drive.jpg";
 import rosa from "../assets/portfolio/the-rosa.jpg";
@@ -68,44 +68,44 @@ const Portfolio = () => {
       live_link: "https://next-photo-app-weld.vercel.app/",
     },
   ];
-  const portfolios = [
-    {
-      id: 1,
-      src: clock,
-      demo: "https://elegant-dasik-5688ee.netlify.app/",
-      code: "https://github.com/Ziad-Ashraf-0/DigitalClock-Vanilla-JS",
-    },
-    {
-      id: 2,
-      src: weather,
-      demo: "http://ziadashraf.me/weather-app/",
-      code: "https://github.com/Ziad-Ashraf-0/weather-app",
-    },
-    {
-      id: 3,
-      src: space,
-      demo: "https://splendorous-florentine-46dec3.netlify.app/",
-      code: "https://github.com/Ziad-Ashraf-0/Space-Trvl-project",
-    },
-    {
-      id: 4,
-      src: drive,
-      demo: "https://cheery-concha-6c1784.netlify.app/",
-      code: "https://github.com/Ziad-Ashraf-0/drive-react",
-    },
-    {
-      id: 5,
-      src: photo,
-      demo: "https://next-photo-app-weld.vercel.app/",
-      code: "https://github.com/Ziad-Ashraf-0/next-photo-app",
-    },
-    {
-      id: 6,
-      src: rosa,
-      demo: "https://the-rosa-psi.vercel.app/",
-      code: "https://github.com/Ziad-Ashraf-0/the-rosa",
-    },
-  ];
+  // const portfolios = [
+  //   {
+  //     id: 1,
+  //     src: clock,
+  //     demo: "https://elegant-dasik-5688ee.netlify.app/",
+  //     code: "https://github.com/Ziad-Ashraf-0/DigitalClock-Vanilla-JS",
+  //   },
+  //   {
+  //     id: 2,
+  //     src: weather,
+  //     demo: "http://ziadashraf.me/weather-app/",
+  //     code: "https://github.com/Ziad-Ashraf-0/weather-app",
+  //   },
+  //   {
+  //     id: 3,
+  //     src: space,
+  //     demo: "https://splendorous-florentine-46dec3.netlify.app/",
+  //     code: "https://github.com/Ziad-Ashraf-0/Space-Trvl-project",
+  //   },
+  //   {
+  //     id: 4,
+  //     src: drive,
+  //     demo: "https://cheery-concha-6c1784.netlify.app/",
+  //     code: "https://github.com/Ziad-Ashraf-0/drive-react",
+  //   },
+  //   {
+  //     id: 5,
+  //     src: photo,
+  //     demo: "https://next-photo-app-weld.vercel.app/",
+  //     code: "https://github.com/Ziad-Ashraf-0/next-photo-app",
+  //   },
+  //   {
+  //     id: 6,
+  //     src: rosa,
+  //     demo: "https://the-rosa-psi.vercel.app/",
+  //     code: "https://github.com/Ziad-Ashraf-0/the-rosa",
+  //   },
+  // ];
 
   return (
     <div
