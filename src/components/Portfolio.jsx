@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
 import clock from "../assets/portfolio/clock.jpg";
 
 import space from "../assets/portfolio/space.jpg";
@@ -8,6 +9,65 @@ import drive from "../assets/portfolio/drive.jpg";
 import rosa from "../assets/portfolio/the-rosa.jpg";
 
 const Portfolio = () => {
+  const projects = [
+    {
+      name: "Car Rent",
+      description:
+        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      tags: [
+        {
+          name: "react",
+          color: "text-blue-500",
+        },
+        {
+          name: "tailwind",
+          color: "text-sky-400",
+        },
+      ],
+      image: drive,
+      source_code_link: "https://github.com/Ziad-Ashraf-0/drive-react",
+      live_link: "https://cheery-concha-6c1784.netlify.app/",
+    },
+    {
+      name: "Rosa",
+      description: "Web application for a resturant to showcase its work.",
+      tags: [
+        {
+          name: "html",
+          color: "text-orange-500",
+        },
+        {
+          name: "css",
+          color: "text-blue-500",
+        },
+        {
+          name: "css-animations",
+          color: "text-pink-400",
+        },
+      ],
+      image: rosa,
+      source_code_link: "https://github.com/Ziad-Ashraf-0/the-rosa",
+      live_link: "https://the-rosa-psi.vercel.app/",
+    },
+    {
+      name: "Photo",
+      description:
+        "A project for photographers to show their best shots taken.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "text-white",
+        },
+        {
+          name: "tailwind",
+          color: "text-sky-400",
+        },
+      ],
+      image: photo,
+      source_code_link: "https://github.com/Ziad-Ashraf-0/next-photo-app",
+      live_link: "https://next-photo-app-weld.vercel.app/",
+    },
+  ];
   const portfolios = [
     {
       id: 1,
@@ -60,7 +120,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, demo, code }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
@@ -87,6 +147,12 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
+          ))}
+        </div> */}
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}
         </div>
       </div>
