@@ -8,6 +8,7 @@ import nextjs from "../assets/nextjs.png";
 import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import vue from "../assets/vue.png";
 
 const Experience = () => {
   const techs = [
@@ -58,6 +59,12 @@ const Experience = () => {
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
+    },
+    {
+      id: 9,
+      src: vue,
+      title: "Vue.js",
+      style: "shadow-green-400",
     },
   ];
 

@@ -1,9 +1,5 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-// import clock from "../assets/portfolio/clock.jpg";
-
-// import space from "../assets/portfolio/space.jpg";
-// import weather from "../assets/portfolio/weather.jpg";
 import photo from "../assets/portfolio/photo.jpg";
 import drive from "../assets/portfolio/drive.jpg";
 import rosa from "../assets/portfolio/the-rosa.jpg";
@@ -13,10 +9,14 @@ const Portfolio = () => {
     {
       name: "Car Rent",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A Modern Next.js 13 Application | React, Next JS 13, TypeScript, Tailwind CSS",
       tags: [
         {
-          name: "react",
+          name: "nextjs",
+          color: "text-white",
+        },
+        {
+          name: "typescript",
           color: "text-blue-500",
         },
         {
@@ -25,8 +25,8 @@ const Portfolio = () => {
         },
       ],
       image: drive,
-      source_code_link: "https://github.com/Ziad-Ashraf-0/drive-react",
-      live_link: "https://cheery-concha-6c1784.netlify.app/",
+      source_code_link: "https://github.com/Ziad-Ashraf-0/car-showcase",
+      live_link: "https://car-showcase-p15y.vercel.app/",
     },
     {
       name: "Rosa",
