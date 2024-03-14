@@ -12,7 +12,7 @@ const ProjectCard = ({
   live_link,
 }) => {
   return (
-    <div className="flex flex-col shadow-md shadow-gray-600 rounded-lg">
+    <div className="flex flex-col shadow-md shadow-gray-600 rounded-lg mb-14 mx-1">
       <div className=" w-full h-[200px]">
         <img
           src={image}

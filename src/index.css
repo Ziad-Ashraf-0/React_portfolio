@@ -9,3 +9,7 @@
     font-family: "Raleway", sans-serif;
   }
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #818386 !important;
+}

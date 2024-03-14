@@ -4,6 +4,14 @@ import photo from "../assets/portfolio/photo.jpg";
 import drive from "../assets/portfolio/drive.jpg";
 import rosa from "../assets/portfolio/the-rosa.jpg";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
+
+import { FreeMode, Pagination } from "swiper/modules";
+
 const Portfolio = () => {
   const projects = [
     {
@@ -67,45 +75,25 @@ const Portfolio = () => {
       source_code_link: "https://github.com/Ziad-Ashraf-0/next-photo-app",
       live_link: "https://next-photo-app-weld.vercel.app/",
     },
+    {
+      name: "Photo",
+      description:
+        "A project for photographers to show their best shots taken.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "text-white",
+        },
+        {
+          name: "tailwind",
+          color: "text-sky-400",
+        },
+      ],
+      image: photo,
+      source_code_link: "https://github.com/Ziad-Ashraf-0/next-photo-app",
+      live_link: "https://next-photo-app-weld.vercel.app/",
+    },
   ];
-  // const portfolios = [
-  //   {
-  //     id: 1,
-  //     src: clock,
-  //     demo: "https://elegant-dasik-5688ee.netlify.app/",
-  //     code: "https://github.com/Ziad-Ashraf-0/DigitalClock-Vanilla-JS",
-  //   },
-  //   {
-  //     id: 2,
-  //     src: weather,
-  //     demo: "http://ziadashraf.me/weather-app/",
-  //     code: "https://github.com/Ziad-Ashraf-0/weather-app",
-  //   },
-  //   {
-  //     id: 3,
-  //     src: space,
-  //     demo: "https://splendorous-florentine-46dec3.netlify.app/",
-  //     code: "https://github.com/Ziad-Ashraf-0/Space-Trvl-project",
-  //   },
-  //   {
-  //     id: 4,
-  //     src: drive,
-  //     demo: "https://cheery-concha-6c1784.netlify.app/",
-  //     code: "https://github.com/Ziad-Ashraf-0/drive-react",
-  //   },
-  //   {
-  //     id: 5,
-  //     src: photo,
-  //     demo: "https://next-photo-app-weld.vercel.app/",
-  //     code: "https://github.com/Ziad-Ashraf-0/next-photo-app",
-  //   },
-  //   {
-  //     id: 6,
-  //     src: rosa,
-  //     demo: "https://the-rosa-psi.vercel.app/",
-  //     code: "https://github.com/Ziad-Ashraf-0/the-rosa",
-  //   },
-  // ];
 
   return (
     <div
@@ -113,47 +101,52 @@ const Portfolio = () => {
       className="bg-gradient-to-b from-black to-gray-800 w-full h-full text-white md:h-screen pt-40 "
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+        <div className="pb-8 ">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, demo, code }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105 h-2/3 w-full"
-              />
-              <div className="flex items-center justify-center">
-                <a
-                  href={demo}
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Demo
-                </a>
-                <a
-                  href={code}
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-center"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Code
-                </a>
-              </div>
-            </div>
-          ))}
-        </div> */}
-
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        {/* <div className="flex gap-8 px-12 sm:px-0">
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}
+        </div> */}
+
+        <div className="flex items-center justify-center flex-col h-[900px]">
+          <Swiper
+            breakpoints={{
+              500: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+              },
+              700: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+              },
+            }}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[FreeMode, Pagination]}
+            className="max-w-[80%] lg:max-w-[100%]"
+          >
+            {projects.map((project, index) => (
+              <SwiperSlide key={project.name}>
+                <ProjectCard
+                  key={`project-${index}`}
+                  index={index}
+                  {...project}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
