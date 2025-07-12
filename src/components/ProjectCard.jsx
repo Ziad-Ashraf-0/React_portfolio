@@ -12,8 +12,8 @@ const ProjectCard = ({
   live_link,
 }) => {
   return (
-    <div className="flex flex-col shadow-md shadow-gray-600 rounded-lg mb-14 mx-1">
-      <div className=" w-full h-[200px]">
+    <div className="flex flex-col shadow border border-accent bg-card-light dark:bg-card-dark rounded-lg mb-14 mx-1 transition-colors duration-300">
+      <div className="w-full h-[200px]">
         <img
           src={image}
           alt="project_image"
@@ -21,15 +21,15 @@ const ProjectCard = ({
         />
       </div>
 
-      <div className=" p-5">
+      <div className="p-5">
         <div className="flow-root">
-          <h3 className="text-white font-bold text-[24px] float-left">
+          <h3 className="text-accent font-bold text-[24px] float-left font-mono">
             {name}
           </h3>
           <div className="flex float-right">
             <div
               onClick={() => window.open(live_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="bg-background-light dark:bg-background-dark w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border border-accent"
             >
               <img
                 src={live}
@@ -39,7 +39,7 @@ const ProjectCard = ({
             </div>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="bg-background-light dark:bg-background-dark w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border border-accent ml-2"
             >
               <img
                 src={github}
@@ -50,12 +50,17 @@ const ProjectCard = ({
           </div>
           <div></div>
         </div>
-        <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        <p className="mt-2 text-text-light dark:text-text-dark text-[14px] font-mono">
+          {description}
+        </p>
       </div>
 
       <div className="mt-auto m-4 flex flex-wrap gap-2">
         {tags.map((tag) => (
-          <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+          <p
+            key={`${name}-${tag.name}`}
+            className={`text-[14px] font-mono ${tag.color}`}
+          >
             #{tag.name}
           </p>
         ))}
